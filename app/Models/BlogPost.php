@@ -6,6 +6,7 @@ use App\Models\User;
 use Illuminate\Database\Eloquent\Factories;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 /**
  * Class BlogPost
@@ -24,7 +25,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
  */
 class BlogPost extends Model
 {
-    use SoftDeletes;
+    use SoftDeletes, HasFactory;
 
     const UNKNOWN_USER = 1;
 

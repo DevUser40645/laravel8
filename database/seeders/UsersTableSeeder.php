@@ -1,6 +1,9 @@
 <?php
 
+namespace Database\Seeders;
+
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
 
 class UsersTableSeeder extends Seeder
@@ -14,13 +17,13 @@ class UsersTableSeeder extends Seeder
     {
         $data = [
             [
-                'name'     => 'Автор не известен',
-                'email'    => 'author_unknown@g.g',
+                'name' => 'Автор не известен',
+                'email' => 'author_unknown@g.g',
                 'password' => bcrypt(Str::random(16)),
             ],
             [
-                'name'     => 'Автор',
-                'email'    => 'author1@g.g',
+                'name' => 'Автор',
+                'email' => 'author1@g.g',
                 'password' => bcrypt(123123),
             ],
         ];
